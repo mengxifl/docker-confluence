@@ -120,6 +120,6 @@ function prepareRUN() {
   chmodDIR
 }
 
-setRunArgs
+main
 prepareRUN
 runuser -m ${RUNAS_USER_NAME} -c "/wikiBinFiles/bin/start-confluence.sh -fg"
