@@ -73,3 +73,5 @@ enjoy
 5. copy confluence.cfg.xml to other peers. copy ${YOUR_SAVE_DATA} to other peers. mount ${YOUR_SHARE_DIR}
 
 6. Start your other server use step 4
+
+7. last set proxy normal I use  nginx to proxy backend. then upstream set to ip_has;
