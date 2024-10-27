@@ -1,7 +1,9 @@
 # docker-confluence
-A docker image that can let you run confluence. But there is no database. Only confluence.
+A docker image that can let you run confluence. But there is no database but had sql lib 
 
-you need run a db server by your self.
+mysql-connector-j-8.1.0.jar and mysql-connector-java-5.1.45-bin.jar. If you want to use other db you can use ` -v  <plugin dir>/pluginfile:/wikiBinFiles/confluence/WEB-INF/lib/pluginfile`
+
+And You need run a db server by your self. 
 
 ## How to use
 
