@@ -20,8 +20,8 @@ docker run -d \
 -v ${YOUR_SAVE_DATA}:/data \
 -e DATA_DIR=/data \
 -e SET_USE_JVM_MS="1024m" \
-SET_USE_JVM_MX="1024m"  \
-confluence:v8 [other parms]
+-e SET_USE_JVM_MX="1024m"  \
+confluence:v8 [other tomcat parms]
 ```
 
 enjoy 
@@ -67,7 +67,7 @@ enjoy
    -e SHARE_DIR=/sharedata \
    -e SET_USE_JVM_MS="1024m" \
    SET_USE_JVM_MX="1024m"  \
-   confluence:v8 [other parms]
+   confluence:v8  [other tomcat parms]
    ```
 
 5. copy confluence.cfg.xml to other peers. copy ${YOUR_SAVE_DATA} to other peers. mount ${YOUR_SHARE_DIR}
