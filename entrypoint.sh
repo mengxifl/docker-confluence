@@ -93,7 +93,6 @@ function main {
     if [[ $1 == "--help" || $1 == "-h" ]]; then
       showHelp
     fi
-    setRunArgs $@
     shift
   done
 }
@@ -120,6 +119,7 @@ function prepareRUN() {
   chmodDIR
 }
 
-main
+main $@
+setRunArgs $@
 prepareRUN
 runuser -m ${RUNAS_USER_NAME} -c "/wikiBinFiles/bin/start-confluence.sh -fg"
