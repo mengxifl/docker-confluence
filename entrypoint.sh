@@ -9,6 +9,9 @@ function setDefault {
   if [[ $DATA_DIR == "" ]]; then
     DATA_DIR=/data/
   fi
+  if [[ $SHARE_DIR == "" ]]; then
+    SHARE_DIR="/sharedata"
+  fi
   if [[ $SET_USE_JVM_MS == "" ]]; then
     SET_USE_JVM_MS=1024m
   fi
