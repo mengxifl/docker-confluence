@@ -25,8 +25,8 @@ function createUSER {
     return
   fi
   useradd ${RUNAS_USER_NAME}
-  echo 'CONF_USER="'${RUNAS_USER_NAME}'"' > /wikiBinFiles/user.sh
-  echo 'export CONF_USER' >> /wikiBinFiles/user.sh
+  echo 'CONF_USER="'${RUNAS_USER_NAME}'"' > /wikiBinFiles/bin/user.sh
+  echo 'export CONF_USER' >> /wikiBinFiles/bin/user.sh
 }
 
 
